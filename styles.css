@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: url('https://assets.codepen.io/6060109/ZigZag.png');
+}
+
+.panel{
+    width: 90%;
+    min-width: 300px;
+    height: 700px;
+    background-color: white;
+    margin: 70px auto;
+    box-shadow: 0px 40px 40px -20px #3C7B61;
+    border-radius: 5px;
+    position: relative;
+}
+
+#close-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.inner-container {
+    width: 100%;
+    text-align: center;
+    padding: 55px 30px;
+}
+
+.inner-container > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #2F463D;
+    padding: 20px 0 10px; /*top sides bottom*/
+}
+
+.inner-container > p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #828282;
+}
