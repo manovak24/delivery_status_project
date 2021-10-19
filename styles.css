@@ -13,12 +13,20 @@ body, html {
 
 body {
     background: url('https://assets.codepen.io/6060109/ZigZag.png');
+    background-size: cover;
 }
 
-.panel{
-    width: 90%;
-    min-width: 300px;
-    height: 700px;
+h2, h5 {
+    color: #2F463D;
+}
+
+h2, h5, h6, a, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.panel {
+    width: 350px;
+    height: 600px;
     background-color: white;
     margin: 70px auto;
     box-shadow: 0px 40px 40px -20px #3C7B61;
@@ -39,10 +47,8 @@ body {
 }
 
 .inner-container > h2 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 22px;
-    color: #2F463D;
     padding: 20px 0 10px; /*top sides bottom*/
 }
 
@@ -51,4 +57,79 @@ body {
     font-size: 14px;
     line-height: 26px;
     color: #828282;
+}
+
+#food-selection {
+    display: flex;
+    align-items: center;
+    background-color: #F0FFF5;
+    margin: 40px 0 30px;
+    border-radius: 5px;
+}
+
+.food-name-price {
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.food-name-price > h5 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.food-name-price > h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7A8F85;
+}
+
+#food-selection > a {
+    color: #467A66;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+#ready-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: white;
+    background: #46A67E;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+#ready-btn:hover {
+    opacity: .8;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.dots-container {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #E0E0E0;
+    border-radius: 100%;
+}
+
+.dot.green {
+    background-color: #67BD99;
 }
