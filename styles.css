@@ -34,6 +34,10 @@ h2, h5, h6, a, button {
     position: relative;
 }
 
+.side-panel {
+    display: none;
+}
+
 #close-button {
     position: absolute;
     right: 15px;
@@ -113,6 +117,35 @@ h2, h5, h6, a, button {
     cursor: pointer;
 }
 
+#next-btn {
+    margin-top: 75px;
+}
+
+#track-btn {
+    margin-top: 60px;
+}
+
+.alt-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: white;
+    background: #BDBDBD;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+.alt-btn:hover {
+    opacity: .8;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
 .dots-container {
     display: flex;
     width: 15%;
@@ -132,4 +165,50 @@ h2, h5, h6, a, button {
 
 .dot.green {
     background-color: #67BD99;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .panel {
+        width: 400px;
+        height: 650px;
+    }
+
+    .side-panel {
+        display: block;
+    }
+
+    #choose-title {
+        margin-top: 50px;
+    }
+
+    .inner-container > img {
+        width: 150px;
+    }
+
+    .inner-container > h2 {
+        font-size: 28px;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .inner-container > p {
+        font-size: 16px;
+        
+    }
+
+    .side-panel > .inner-container > h2 {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .side-panel > .inner-container > p {
+        margin-top: 20px;
+    }
 }
