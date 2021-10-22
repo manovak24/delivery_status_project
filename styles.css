@@ -15,6 +15,8 @@ body {
     background: url('https://assets.codepen.io/6060109/ZigZag.png');
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2, h5 {
@@ -30,10 +32,28 @@ h2, h5, h6, a, button {
     width: 350px;
     height: 650px;
     background-color: white;
-    margin: 70px auto;
+    margin: 70px 0;
     box-shadow: 0px 40px 40px -20px #3C7B61;
     border-radius: 5px;
     position: relative;
+}
+
+.panel.left{
+    margin-right: -20px;
+}
+
+.panel.right{
+    margin-left: -20px;
+}
+
+.panel.left, .panel.right {
+    height: 600px;
+    z-index: 1;
+}
+
+.panel.center {
+    z-index: 9;
+    width: 370px;
 }
 
 #close-button {
