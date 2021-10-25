@@ -38,10 +38,6 @@ h2, h5, h6, a, button {
     position: relative;
 }
 
-<<<<<<< HEAD
-.side-panel {
-    display: none;
-=======
 .panel.left{
     margin-right: -20px;
 }
@@ -58,7 +54,6 @@ h2, h5, h6, a, button {
 .panel.center {
     z-index: 9;
     width: 370px;
->>>>>>> alt-history
 }
 
 #close-button {
@@ -148,35 +143,6 @@ h2, h5, h6, a, button {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-#next-btn {
-    margin-top: 75px;
-}
-
-#track-btn {
-    margin-top: 60px;
-}
-
-.alt-btn {
-    width: 100%;
-    padding: 15px 0;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .8px;
-    color: white;
-    background: #BDBDBD;
-    border: none;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
-    border-radius: 5px;
-    transition: .3s ease all;
-}
-
-.alt-btn:hover {
-    opacity: .8;
-    transition: .3s ease all;
-    cursor: pointer;
-=======
 .inactive-btn {
     background: #BDBDBD;
     box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
@@ -185,7 +151,6 @@ h2, h5, h6, a, button {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
->>>>>>> alt-history
 }
 
 .dots-container {
@@ -209,52 +174,6 @@ h2, h5, h6, a, button {
     background-color: #67BD99;
 }
 
-<<<<<<< HEAD
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .panel {
-        width: 400px;
-        height: 650px;
-    }
-
-    .side-panel {
-        display: block;
-    }
-
-    #choose-title {
-        margin-top: 50px;
-    }
-
-    .inner-container > img {
-        width: 150px;
-    }
-
-    .inner-container > h2 {
-        font-size: 28px;
-        width: 75%;
-        margin: auto;
-    }
-    
-    .inner-container > p {
-        font-size: 16px;
-        
-    }
-
-    .side-panel > .inner-container > h2 {
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-
-    .side-panel > .inner-container > p {
-        margin-top: 20px;
-    }
-=======
 .right, .left {
     display: none;
 }
@@ -264,5 +183,4 @@ h2, h5, h6, a, button {
     .right, .left {
         display: block;
     }
->>>>>>> alt-history
 }
